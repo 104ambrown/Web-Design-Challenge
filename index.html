@@ -15,18 +15,17 @@
     
     <title>Web-Design Challenge by Allison Brown</title>
 </head>
-<body>
-
-</body>
-
-
+<body style="background-color: #170229">
+    <!-- Navigation bar and dropdown menu-->
     <nav class="navbar navbar-expand-lg navbar.bg-primary" style="background-color: #6f42c1;">
         <div class="container">
+            <!-- Title in the navbar-->
             <a class="navbar-brand text-white" href="index.html">Latitudinal Impact on Global Weather</a>
+            <!-- Instantiating the dropdown menu button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
             </button>
-  
+                <!-- Listing the menu items. Specifying the dropdown menu's background and text colors -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item dropdown">
@@ -47,14 +46,30 @@
                                 <a class="dropdown-item" style="color: #fff;" href="comparison.html">'I love all my weather equally!' *Earlier that day* 'I don't care for cold...'</a>
                                     <div class="dropdown-divider"></div>
                             </div>
+                        </li>
+                    </ul>
+                <!-- Search bar that was a part of the source code from bootswatch-->    
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                </div>
+        </div>
+    </nav>
+    
+    <!-- Main body of the page-->
+    <div class="container">
+        <div class="row" style="color: #44d9e8">
+            <div class="col-md-8">
+                <div class="col-md-12">
+                    <h5>The Dirty Deets</h5>
+                    <p>The purpose of this project was to examine how changes in latitude impact the weather experienced in a location. Data from 500 cities was collected by using OpenWeatherMap API.The data was then cleaned and entered into a dataframe.</p>
+                    <p>The gathered, cleaned, and compiled data was then used to generate graphs using Matplotlib to allow a visual analysis of the data to be performed. Weather elements such as humidity, cloud cover, wind speed, and temperature were all considered. Analyses and conclusions can be found, (along with the plots), on each of their respective pages.</p>
+                </div>
             </div>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
+
+        </div>
     </div>
-  </nav>
+</body>
+</body>
 </html>
